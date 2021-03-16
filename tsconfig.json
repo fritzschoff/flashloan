@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es2018",
     "lib": [
       "dom",
       "dom.iterable",
@@ -18,9 +18,15 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "outDir": "dist"
   },
   "include": [
-    "src"
+    "src",
+    "./scripts",
+    "./test"
+  ],
+  "files": [
+    "./hardhat.config.ts"
   ]
 }
