@@ -1,0 +1,2418 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/home/max/code/flashloan/contracts/aave/DataTypes.sol": {
+      "lastModificationDate": 1615912124329,
+      "contentHash": "0b767bdec216dc84b9351fdf497dc636",
+      "sourceName": "contracts/aave/DataTypes.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "DataTypes"
+      ]
+    },
+    "/home/max/code/flashloan/contracts/aave/ILendingPool.sol": {
+      "lastModificationDate": 1615912105789,
+      "contentHash": "d7f053003065c66f74c247a8aa939fb9",
+      "sourceName": "contracts/aave/ILendingPool.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ILendingPoolAddressesProvider.sol",
+        "./DataTypes.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "ILendingPool"
+      ]
+    },
+    "/home/max/code/flashloan/contracts/aave/ILendingPoolAddressesProvider.sol": {
+      "lastModificationDate": 1615912114149,
+      "contentHash": "45f5c89aeed778deb53288fffafdd6aa",
+      "sourceName": "contracts/aave/ILendingPoolAddressesProvider.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "ILendingPoolAddressesProvider"
+      ]
+    },
+    "/home/max/code/flashloan/contracts/Flashloan.sol": {
+      "lastModificationDate": 1615913044799,
+      "contentHash": "e0f52d46a43a1ebdc25f67e440c0308f",
+      "sourceName": "contracts/Flashloan.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./aave/FlashLoanReceiverBase.sol",
+        "./openzeppelin/token/ERC20/IERC20.sol",
+        "./aave/ILendingPoolAddressesProvider.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "Flashloan"
+      ]
+    },
+    "/home/max/code/flashloan/contracts/aave/FlashLoanReceiverBase.sol": {
+      "lastModificationDate": 1615912073359,
+      "contentHash": "22150744ee6a5ccec7ce2f893c9b67dc",
+      "sourceName": "contracts/aave/FlashLoanReceiverBase.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../openzeppelin/math/SafeMath.sol",
+        "../openzeppelin/token/ERC20/IERC20.sol",
+        "../openzeppelin/token/ERC20/SafeERC20.sol",
+        "./IFlashLoanReceiver.sol",
+        "./ILendingPoolAddressesProvider.sol",
+        "./ILendingPool.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "FlashLoanReceiverBase"
+      ]
+    },
+    "/home/max/code/flashloan/contracts/openzeppelin/token/ERC20/IERC20.sol": {
+      "lastModificationDate": 1615911718799,
+      "contentHash": "dc33f115b06a62f5f6c62af735b8302c",
+      "sourceName": "contracts/openzeppelin/token/ERC20/IERC20.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/home/max/code/flashloan/contracts/openzeppelin/math/SafeMath.sol": {
+      "lastModificationDate": 1615911718799,
+      "contentHash": "fae58f64850246a4f1ae3b24dfb59efa",
+      "sourceName": "contracts/openzeppelin/math/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "/home/max/code/flashloan/contracts/openzeppelin/token/ERC20/SafeERC20.sol": {
+      "lastModificationDate": 1615911718799,
+      "contentHash": "95e6e051ef0ec49572891748988f3719",
+      "sourceName": "contracts/openzeppelin/token/ERC20/SafeERC20.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol",
+        "../../math/SafeMath.sol",
+        "../../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "SafeERC20"
+      ]
+    },
+    "/home/max/code/flashloan/contracts/aave/IFlashLoanReceiver.sol": {
+      "lastModificationDate": 1615912097369,
+      "contentHash": "322367d4d0984c1f483c93a41b5e7bdf",
+      "sourceName": "contracts/aave/IFlashLoanReceiver.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ILendingPoolAddressesProvider.sol",
+        "./ILendingPool.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "IFlashLoanReceiver"
+      ]
+    },
+    "/home/max/code/flashloan/contracts/openzeppelin/utils/Address.sol": {
+      "lastModificationDate": 1615911718809,
+      "contentHash": "079b4185b8794e6abce0f0c79ffeb8f5",
+      "sourceName": "contracts/openzeppelin/utils/Address.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.2"
+      ],
+      "artifacts": [
+        "Address"
+      ]
+    },
+    "/home/max/code/flashloan/contracts/openzeppelin/token/ERC777/ERC777.sol": {
+      "lastModificationDate": 1615911718809,
+      "contentHash": "7cd65389f49ee23abfcb17d496608b80",
+      "sourceName": "contracts/openzeppelin/token/ERC777/ERC777.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../GSN/Context.sol",
+        "./IERC777.sol",
+        "./IERC777Recipient.sol",
+        "./IERC777Sender.sol",
+        "../../token/ERC20/IERC20.sol",
+        "../../math/SafeMath.sol",
+        "../../utils/Address.sol",
+        "../../introspection/IERC1820Registry.sol",
+        "../../Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "ERC777UpgradeSafe"
+      ]
+    },
+    "/home/max/code/flashloan/contracts/openzeppelin/GSN/Context.sol": {
+      "lastModificationDate": 1615911718789,
+      "contentHash": "29ba4a35181267b3aab4563990e56909",
+      "sourceName": "contracts/openzeppelin/GSN/Context.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "ContextUpgradeSafe"
+      ]
+    },
+    "/home/max/code/flashloan/contracts/openzeppelin/token/ERC777/IERC777.sol": {
+      "lastModificationDate": 1615911718809,
+      "contentHash": "c284a7aa9973c864a00570c0624a53e7",
+      "sourceName": "contracts/openzeppelin/token/ERC777/IERC777.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "IERC777"
+      ]
+    },
+    "/home/max/code/flashloan/contracts/openzeppelin/token/ERC777/IERC777Recipient.sol": {
+      "lastModificationDate": 1615911718809,
+      "contentHash": "8a5c9a0402097a6d41aea68e72909bf4",
+      "sourceName": "contracts/openzeppelin/token/ERC777/IERC777Recipient.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "IERC777Recipient"
+      ]
+    },
+    "/home/max/code/flashloan/contracts/openzeppelin/token/ERC777/IERC777Sender.sol": {
+      "lastModificationDate": 1615911718809,
+      "contentHash": "ae5129055f6b8eb9292d912bf11a2ea6",
+      "sourceName": "contracts/openzeppelin/token/ERC777/IERC777Sender.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "IERC777Sender"
+      ]
+    },
+    "/home/max/code/flashloan/contracts/openzeppelin/introspection/IERC1820Registry.sol": {
+      "lastModificationDate": 1615911718799,
+      "contentHash": "0d164f205ca5a4b1d5a0198cdc59352a",
+      "sourceName": "contracts/openzeppelin/introspection/IERC1820Registry.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "IERC1820Registry"
+      ]
+    },
+    "/home/max/code/flashloan/contracts/openzeppelin/Initializable.sol": {
+      "lastModificationDate": 1615911724389,
+      "contentHash": "402d88f041ed1754339d60ae70077cd9",
+      "sourceName": "contracts/openzeppelin/Initializable.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.24 <0.7.0"
+      ],
+      "artifacts": [
+        "Initializable"
+      ]
+    },
+    "/home/max/code/flashloan/contracts/openzeppelin/utils/ReentrancyGuard.sol": {
+      "lastModificationDate": 1615911718809,
+      "contentHash": "02bbb1cdc56d4ea93ffd0afee5042290",
+      "sourceName": "contracts/openzeppelin/utils/ReentrancyGuard.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "ReentrancyGuardUpgradeSafe"
+      ]
+    },
+    "/home/max/code/flashloan/contracts/openzeppelin/token/ERC721/ERC721Holder.sol": {
+      "lastModificationDate": 1615911718799,
+      "contentHash": "ce1a38d5d9179c6f20a635b0da53a979",
+      "sourceName": "contracts/openzeppelin/token/ERC721/ERC721Holder.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC721Receiver.sol",
+        "../../Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "ERC721HolderUpgradeSafe"
+      ]
+    },
+    "/home/max/code/flashloan/contracts/openzeppelin/token/ERC721/IERC721Receiver.sol": {
+      "lastModificationDate": 1615911718799,
+      "contentHash": "c70d3a74de97edb116b1f5ffc326eb6a",
+      "sourceName": "contracts/openzeppelin/token/ERC721/IERC721Receiver.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "IERC721Receiver"
+      ]
+    },
+    "/home/max/code/flashloan/contracts/openzeppelin/token/ERC721/ERC721.sol": {
+      "lastModificationDate": 1615911718799,
+      "contentHash": "db78bfc03e7e1285adb2fb644ba29c9c",
+      "sourceName": "contracts/openzeppelin/token/ERC721/ERC721.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../GSN/Context.sol",
+        "./IERC721.sol",
+        "./IERC721Metadata.sol",
+        "./IERC721Enumerable.sol",
+        "./IERC721Receiver.sol",
+        "../../introspection/ERC165.sol",
+        "../../math/SafeMath.sol",
+        "../../utils/Address.sol",
+        "../../utils/EnumerableSet.sol",
+        "../../utils/EnumerableMap.sol",
+        "../../utils/Strings.sol",
+        "../../Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "ERC721UpgradeSafe"
+      ]
+    },
+    "/home/max/code/flashloan/contracts/openzeppelin/token/ERC721/IERC721.sol": {
+      "lastModificationDate": 1615911718799,
+      "contentHash": "97c88c8657def5aa981d8a981317ca2a",
+      "sourceName": "contracts/openzeppelin/token/ERC721/IERC721.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../introspection/IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.2"
+      ],
+      "artifacts": [
+        "IERC721"
+      ]
+    },
+    "/home/max/code/flashloan/contracts/openzeppelin/token/ERC721/IERC721Metadata.sol": {
+      "lastModificationDate": 1615911718799,
+      "contentHash": "3f7a2d34fc54fe557c700faf4f442ffa",
+      "sourceName": "contracts/openzeppelin/token/ERC721/IERC721Metadata.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.2"
+      ],
+      "artifacts": [
+        "IERC721Metadata"
+      ]
+    },
+    "/home/max/code/flashloan/contracts/openzeppelin/token/ERC721/IERC721Enumerable.sol": {
+      "lastModificationDate": 1615911718799,
+      "contentHash": "f2f0be4d965e99b13c04ae9caf76421c",
+      "sourceName": "contracts/openzeppelin/token/ERC721/IERC721Enumerable.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.2"
+      ],
+      "artifacts": [
+        "IERC721Enumerable"
+      ]
+    },
+    "/home/max/code/flashloan/contracts/openzeppelin/introspection/ERC165.sol": {
+      "lastModificationDate": 1615911718789,
+      "contentHash": "5835959216e764f0fb1d319b3b7427e3",
+      "sourceName": "contracts/openzeppelin/introspection/ERC165.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC165.sol",
+        "../Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "ERC165UpgradeSafe"
+      ]
+    },
+    "/home/max/code/flashloan/contracts/openzeppelin/utils/EnumerableSet.sol": {
+      "lastModificationDate": 1615911718809,
+      "contentHash": "70a75b95955d808020ec348297465a32",
+      "sourceName": "contracts/openzeppelin/utils/EnumerableSet.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "EnumerableSet"
+      ]
+    },
+    "/home/max/code/flashloan/contracts/openzeppelin/utils/EnumerableMap.sol": {
+      "lastModificationDate": 1615911718809,
+      "contentHash": "48ed133a05075e00b528eaa8fb30d64e",
+      "sourceName": "contracts/openzeppelin/utils/EnumerableMap.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "EnumerableMap"
+      ]
+    },
+    "/home/max/code/flashloan/contracts/openzeppelin/utils/Strings.sol": {
+      "lastModificationDate": 1615911718809,
+      "contentHash": "f1d07d1791d3241ee6b79d0c5f2629bc",
+      "sourceName": "contracts/openzeppelin/utils/Strings.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "Strings"
+      ]
+    },
+    "/home/max/code/flashloan/contracts/openzeppelin/introspection/IERC165.sol": {
+      "lastModificationDate": 1615911718799,
+      "contentHash": "5ec9ec08d98492966489f7aaff92a89e",
+      "sourceName": "contracts/openzeppelin/introspection/IERC165.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "IERC165"
+      ]
+    },
+    "/home/max/code/flashloan/contracts/openzeppelin/token/ERC721/ERC721Pausable.sol": {
+      "lastModificationDate": 1615911718799,
+      "contentHash": "1cf19ffd7863b589da50f732bf3555a0",
+      "sourceName": "contracts/openzeppelin/token/ERC721/ERC721Pausable.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ERC721.sol",
+        "../../utils/Pausable.sol",
+        "../../Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "ERC721PausableUpgradeSafe"
+      ]
+    },
+    "/home/max/code/flashloan/contracts/openzeppelin/utils/Pausable.sol": {
+      "lastModificationDate": 1615911718809,
+      "contentHash": "56afb51c3fefe4cd06e7760d3e8642da",
+      "sourceName": "contracts/openzeppelin/utils/Pausable.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../GSN/Context.sol",
+        "../Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "PausableUpgradeSafe"
+      ]
+    },
+    "/home/max/code/flashloan/contracts/openzeppelin/token/ERC721/ERC721Burnable.sol": {
+      "lastModificationDate": 1615911718799,
+      "contentHash": "2e6dce1ff4855d17ae68d494fcf2b0d1",
+      "sourceName": "contracts/openzeppelin/token/ERC721/ERC721Burnable.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../GSN/Context.sol",
+        "./ERC721.sol",
+        "../../Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "ERC721BurnableUpgradeSafe"
+      ]
+    },
+    "/home/max/code/flashloan/contracts/openzeppelin/presets/ERC721PresetMinterPauserAutoId.sol": {
+      "lastModificationDate": 1615911718799,
+      "contentHash": "a9b674fe7b88bcbf0f368976768ef431",
+      "sourceName": "contracts/openzeppelin/presets/ERC721PresetMinterPauserAutoId.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../access/AccessControl.sol",
+        "../GSN/Context.sol",
+        "../utils/Counters.sol",
+        "../token/ERC721/ERC721.sol",
+        "../token/ERC721/ERC721Burnable.sol",
+        "../token/ERC721/ERC721Pausable.sol",
+        "../Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "ERC721PresetMinterPauserAutoIdUpgradeSafe"
+      ]
+    },
+    "/home/max/code/flashloan/contracts/openzeppelin/access/AccessControl.sol": {
+      "lastModificationDate": 1615911718789,
+      "contentHash": "d8932bf1735d53a1b6954331afc1e8d6",
+      "sourceName": "contracts/openzeppelin/access/AccessControl.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/EnumerableSet.sol",
+        "../utils/Address.sol",
+        "../GSN/Context.sol",
+        "../Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "AccessControlUpgradeSafe"
+      ]
+    },
+    "/home/max/code/flashloan/contracts/openzeppelin/utils/Counters.sol": {
+      "lastModificationDate": 1615911718809,
+      "contentHash": "9a218a43531df8ab9cb2abebb84c88ce",
+      "sourceName": "contracts/openzeppelin/utils/Counters.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "Counters"
+      ]
+    },
+    "/home/max/code/flashloan/contracts/openzeppelin/token/ERC20/ERC20Snapshot.sol": {
+      "lastModificationDate": 1615911718799,
+      "contentHash": "902e70edf86a6248a06e9e9d57ce2ece",
+      "sourceName": "contracts/openzeppelin/token/ERC20/ERC20Snapshot.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../math/SafeMath.sol",
+        "../../utils/Arrays.sol",
+        "../../utils/Counters.sol",
+        "./ERC20.sol",
+        "../../Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "ERC20SnapshotUpgradeSafe"
+      ]
+    },
+    "/home/max/code/flashloan/contracts/openzeppelin/utils/Arrays.sol": {
+      "lastModificationDate": 1615911718809,
+      "contentHash": "7cce9ff2ecf7337e3db0d825d58ec0f7",
+      "sourceName": "contracts/openzeppelin/utils/Arrays.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../math/Math.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "Arrays"
+      ]
+    },
+    "/home/max/code/flashloan/contracts/openzeppelin/token/ERC20/ERC20.sol": {
+      "lastModificationDate": 1615911718799,
+      "contentHash": "b51b3e2390708fa4563fa5bce80babf9",
+      "sourceName": "contracts/openzeppelin/token/ERC20/ERC20.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../GSN/Context.sol",
+        "./IERC20.sol",
+        "../../math/SafeMath.sol",
+        "../../utils/Address.sol",
+        "../../Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "ERC20UpgradeSafe"
+      ]
+    },
+    "/home/max/code/flashloan/contracts/openzeppelin/math/Math.sol": {
+      "lastModificationDate": 1615911718799,
+      "contentHash": "ff55ee5758129908ae3b34db43b31967",
+      "sourceName": "contracts/openzeppelin/math/Math.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "Math"
+      ]
+    },
+    "/home/max/code/flashloan/contracts/openzeppelin/token/ERC20/ERC20Capped.sol": {
+      "lastModificationDate": 1615911718799,
+      "contentHash": "cd0b267b9bbba0c9fcf634478457494e",
+      "sourceName": "contracts/openzeppelin/token/ERC20/ERC20Capped.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ERC20.sol",
+        "../../Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "ERC20CappedUpgradeSafe"
+      ]
+    },
+    "/home/max/code/flashloan/contracts/openzeppelin/token/ERC20/ERC20Pausable.sol": {
+      "lastModificationDate": 1615911718799,
+      "contentHash": "33b525be96db2e99d3814054e2452605",
+      "sourceName": "contracts/openzeppelin/token/ERC20/ERC20Pausable.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ERC20.sol",
+        "../../utils/Pausable.sol",
+        "../../Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "ERC20PausableUpgradeSafe"
+      ]
+    },
+    "/home/max/code/flashloan/contracts/openzeppelin/presets/ERC20PresetMinterPauser.sol": {
+      "lastModificationDate": 1615911718799,
+      "contentHash": "9481523bb7019c02d9e8f24d5798cdc8",
+      "sourceName": "contracts/openzeppelin/presets/ERC20PresetMinterPauser.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../access/AccessControl.sol",
+        "../GSN/Context.sol",
+        "../token/ERC20/ERC20.sol",
+        "../token/ERC20/ERC20Burnable.sol",
+        "../token/ERC20/ERC20Pausable.sol",
+        "../Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "ERC20PresetMinterPauserUpgradeSafe"
+      ]
+    },
+    "/home/max/code/flashloan/contracts/openzeppelin/token/ERC20/ERC20Burnable.sol": {
+      "lastModificationDate": 1615911718799,
+      "contentHash": "212415f556ea4b4dc76e17e2e317797d",
+      "sourceName": "contracts/openzeppelin/token/ERC20/ERC20Burnable.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../GSN/Context.sol",
+        "./ERC20.sol",
+        "../../Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "ERC20BurnableUpgradeSafe"
+      ]
+    },
+    "/home/max/code/flashloan/contracts/openzeppelin/payment/escrow/Escrow.sol": {
+      "lastModificationDate": 1615911718799,
+      "contentHash": "ae2469439fcb77adae9a423d3e2635bc",
+      "sourceName": "contracts/openzeppelin/payment/escrow/Escrow.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../math/SafeMath.sol",
+        "../../access/Ownable.sol",
+        "../../utils/Address.sol",
+        "../../Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "EscrowUpgradeSafe"
+      ]
+    },
+    "/home/max/code/flashloan/contracts/openzeppelin/access/Ownable.sol": {
+      "lastModificationDate": 1615911718789,
+      "contentHash": "3aa0c3038c55f2e2c14205311a71e879",
+      "sourceName": "contracts/openzeppelin/access/Ownable.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../GSN/Context.sol",
+        "../Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "OwnableUpgradeSafe"
+      ]
+    },
+    "/home/max/code/flashloan/contracts/openzeppelin/payment/PullPayment.sol": {
+      "lastModificationDate": 1615911718799,
+      "contentHash": "726830ff0d9dde0f8ca1da48554dffb1",
+      "sourceName": "contracts/openzeppelin/payment/PullPayment.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./escrow/Escrow.sol",
+        "../Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.2"
+      ],
+      "artifacts": [
+        "PullPaymentUpgradeSafe"
+      ]
+    },
+    "/home/max/code/flashloan/contracts/openzeppelin/GSN/GSNRecipientERC20Fee.sol": {
+      "lastModificationDate": 1615911718789,
+      "contentHash": "7ba3a01d133d4341733f297ae971bc32",
+      "sourceName": "contracts/openzeppelin/GSN/GSNRecipientERC20Fee.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./GSNRecipient.sol",
+        "../math/SafeMath.sol",
+        "../access/Ownable.sol",
+        "../token/ERC20/SafeERC20.sol",
+        "../token/ERC20/ERC20.sol",
+        "../Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "GSNRecipientERC20FeeUpgradeSafe",
+        "__unstable__ERC20Owned"
+      ]
+    },
+    "/home/max/code/flashloan/contracts/openzeppelin/GSN/GSNRecipient.sol": {
+      "lastModificationDate": 1615911718789,
+      "contentHash": "acdc30b87881eaaadc6d66244f5b3c29",
+      "sourceName": "contracts/openzeppelin/GSN/GSNRecipient.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IRelayRecipient.sol",
+        "./IRelayHub.sol",
+        "./Context.sol",
+        "../Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "GSNRecipientUpgradeSafe"
+      ]
+    },
+    "/home/max/code/flashloan/contracts/openzeppelin/GSN/IRelayRecipient.sol": {
+      "lastModificationDate": 1615911718789,
+      "contentHash": "254aef178a66554eeeef69a63e04b325",
+      "sourceName": "contracts/openzeppelin/GSN/IRelayRecipient.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "IRelayRecipient"
+      ]
+    },
+    "/home/max/code/flashloan/contracts/openzeppelin/GSN/IRelayHub.sol": {
+      "lastModificationDate": 1615911718789,
+      "contentHash": "ad7e3246c63e7b61d9249792fbb4cdac",
+      "sourceName": "contracts/openzeppelin/GSN/IRelayHub.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "IRelayHub"
+      ]
+    },
+    "/home/max/code/flashloan/contracts/openzeppelin/token/ERC20/TokenTimelock.sol": {
+      "lastModificationDate": 1615911718799,
+      "contentHash": "134176a6a3b5563f3308c62c34a54bf1",
+      "sourceName": "contracts/openzeppelin/token/ERC20/TokenTimelock.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./SafeERC20.sol",
+        "../../Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "TokenTimelockUpgradeSafe"
+      ]
+    },
+    "/home/max/code/flashloan/contracts/openzeppelin/drafts/TokenVesting.sol": {
+      "lastModificationDate": 1615911718789,
+      "contentHash": "fbe7931550f805a288c496abad377d44",
+      "sourceName": "contracts/openzeppelin/drafts/TokenVesting.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC20/SafeERC20.sol",
+        "../access/Ownable.sol",
+        "../math/SafeMath.sol",
+        "../Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "TokenVestingUpgradeSafe"
+      ]
+    },
+    "/home/max/code/flashloan/contracts/openzeppelin/payment/PaymentSplitter.sol": {
+      "lastModificationDate": 1615911718799,
+      "contentHash": "bd5a4bd6c488263ea1180df71664dbb5",
+      "sourceName": "contracts/openzeppelin/payment/PaymentSplitter.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../GSN/Context.sol",
+        "../math/SafeMath.sol",
+        "../Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "PaymentSplitterUpgradeSafe"
+      ]
+    },
+    "/home/max/code/flashloan/contracts/openzeppelin/GSN/GSNRecipientSignature.sol": {
+      "lastModificationDate": 1615911718789,
+      "contentHash": "931593fbc3294939f2090f162ad2d40f",
+      "sourceName": "contracts/openzeppelin/GSN/GSNRecipientSignature.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./GSNRecipient.sol",
+        "../cryptography/ECDSA.sol",
+        "../Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "GSNRecipientSignatureUpgradeSafe"
+      ]
+    },
+    "/home/max/code/flashloan/contracts/openzeppelin/cryptography/ECDSA.sol": {
+      "lastModificationDate": 1615911718789,
+      "contentHash": "3b5fef7279788c6cf3ea7e5cb810ea0c",
+      "sourceName": "contracts/openzeppelin/cryptography/ECDSA.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "ECDSA"
+      ]
+    },
+    "/home/max/code/flashloan/contracts/openzeppelin/payment/escrow/ConditionalEscrow.sol": {
+      "lastModificationDate": 1615911718799,
+      "contentHash": "45b8c414b3e118cdb77224ee9cadf9b3",
+      "sourceName": "contracts/openzeppelin/payment/escrow/ConditionalEscrow.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Escrow.sol",
+        "../../Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "ConditionalEscrowUpgradeSafe"
+      ]
+    },
+    "/home/max/code/flashloan/contracts/openzeppelin/payment/escrow/RefundEscrow.sol": {
+      "lastModificationDate": 1615911718799,
+      "contentHash": "30a5170bbb99cad00442fd1c11e8ef67",
+      "sourceName": "contracts/openzeppelin/payment/escrow/RefundEscrow.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ConditionalEscrow.sol",
+        "../../Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "RefundEscrowUpgradeSafe"
+      ]
+    },
+    "/home/max/code/flashloan/contracts/openzeppelin/introspection/ERC1820Implementer.sol": {
+      "lastModificationDate": 1615911718789,
+      "contentHash": "433e9268f833254d1a151257040f050d",
+      "sourceName": "contracts/openzeppelin/introspection/ERC1820Implementer.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC1820Implementer.sol",
+        "../Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "ERC1820ImplementerUpgradeSafe"
+      ]
+    },
+    "/home/max/code/flashloan/contracts/openzeppelin/introspection/IERC1820Implementer.sol": {
+      "lastModificationDate": 1615911718799,
+      "contentHash": "b60e70cfa02d9f7e1822e2c9f4a0d778",
+      "sourceName": "contracts/openzeppelin/introspection/IERC1820Implementer.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "IERC1820Implementer"
+      ]
+    },
+    "/home/max/code/flashloan/contracts/openzeppelin/cryptography/MerkleProof.sol": {
+      "lastModificationDate": 1615911718789,
+      "contentHash": "b72b4dc257af4d3bb3123200952f975c",
+      "sourceName": "contracts/openzeppelin/cryptography/MerkleProof.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "MerkleProof"
+      ]
+    },
+    "/home/max/code/flashloan/contracts/openzeppelin/introspection/ERC165Checker.sol": {
+      "lastModificationDate": 1615911718789,
+      "contentHash": "995e6b2480f7781b68ba52553397d9a7",
+      "sourceName": "contracts/openzeppelin/introspection/ERC165Checker.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.2"
+      ],
+      "artifacts": [
+        "ERC165Checker"
+      ]
+    },
+    "/home/max/code/flashloan/contracts/openzeppelin/math/SignedSafeMath.sol": {
+      "lastModificationDate": 1615911718799,
+      "contentHash": "ae4ab3031d74301e1577e50aba2e1c12",
+      "sourceName": "contracts/openzeppelin/math/SignedSafeMath.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "SignedSafeMath"
+      ]
+    },
+    "/home/max/code/flashloan/contracts/openzeppelin/utils/Create2.sol": {
+      "lastModificationDate": 1615911718809,
+      "contentHash": "cf47389919567da30740453be979c4a8",
+      "sourceName": "contracts/openzeppelin/utils/Create2.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "Create2"
+      ]
+    },
+    "/home/max/code/flashloan/contracts/openzeppelin/utils/SafeCast.sol": {
+      "lastModificationDate": 1615911718809,
+      "contentHash": "0ed8ffe6dd7b3a9702fa93f1ab89ffea",
+      "sourceName": "contracts/openzeppelin/utils/SafeCast.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "SafeCast"
+      ]
+    },
+    "/home/max/code/flashloan/contracts/Greeter.sol": {
+      "lastModificationDate": 1615908244079,
+      "contentHash": "8e4b943890d396929e7d2875c8d47222",
+      "sourceName": "contracts/Greeter.sol",
+      "solcConfig": {
+        "version": "0.7.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "hardhat/console.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "Greeter"
+      ]
+    },
+    "/home/max/code/flashloan/node_modules/hardhat/console.sol": {
+      "lastModificationDate": 1615908381779,
+      "contentHash": "cc4777addd464ea56fa35b1c45df0591",
+      "sourceName": "hardhat/console.sol",
+      "solcConfig": {
+        "version": "0.7.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "console"
+      ]
+    }
+  }
+}
