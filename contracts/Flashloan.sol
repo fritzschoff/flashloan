@@ -28,30 +28,32 @@ contract Flashloan is FlashLoanReceiverBase {
         return true;
     }
 
-    function startFlashloan(address[] assets, uint256[] amounts) public {
+    function startFlashloan(address[] memory _assets, uint256[] memory _amounts)
+        public
+    {
         require(
-            assets.length == amounts.length,
+            _assets.length == _amounts.length,
             "Flashloan: Both assets and amounts arrays need to have the same length"
         );
         address receiverAddress = address(this);
 
-        address[] memory assets = new address[](assets.length);
+        address[] memory assets = new address[](_assets.length);
 
-        for (uint8 i = 0; i < assets.length; i++) {
-            assets.push(assets[i]);
+        for (uint8 i = 0; i < _assets.length; i++) {
+            assets[i] = _assets[i];
         }
 
-        uint256[] memory amounts = new uint256[](amounts.length);
+        uint256[] memory amounts = new uint256[](_amounts.length);
 
-        for (uint8 i = 0; i < amounts.length; i++) {
-            amounts.push(amounts[i]);
+        for (uint8 i = 0; i < _amounts.length; i++) {
+            amounts[i] = _amounts[i];
         }
 
         // 0 = no debt, 1 = stable, 2 = variable
-        uint256[] memory modes = new uint256[](amounts.length);
+        uint256[] memory modes = new uint256[](_amounts.length);
 
-        for (uint8 i = 0; i < modes.length; i++) {
-            modes.push(0);
+        for (uint8 i = 0; i < _amounts.length; i++) {
+            modes[i] = 0;
         }
 
         address onBehalfOf = address(msg.sender);

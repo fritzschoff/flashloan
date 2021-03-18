@@ -107,8 +107,8 @@
       ]
     },
     "/home/max/code/flashloan/contracts/Flashloan.sol": {
-      "lastModificationDate": 1615913044799,
-      "contentHash": "e0f52d46a43a1ebdc25f67e440c0308f",
+      "lastModificationDate": 1615926818020,
+      "contentHash": "ce95a89ce79330ed59a32dda9d4c21d4",
       "sourceName": "contracts/Flashloan.sol",
       "solcConfig": {
         "version": "0.6.8",
